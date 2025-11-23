@@ -1,0 +1,87 @@
+/* =============== GENERAL =============== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe6f2, #ffb3d9);
+    min-height: 100vh;
+}
+
+/* =============== NAVBAR =============== */
+.simple-navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    padding: 14px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.simple-navbar nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #7c2c63;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 4px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    color: #ff4f9b;
+}
+
+.nav-link.active {
+    color: #ff4f9b;
+    border-bottom: 2px solid #ff4f9b;
+}
+
+/* =============== HOME TITLE =============== */
+.center-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 4rem;
+    color: #3a1030;
+    font-weight: 700;
+    text-shadow: 0 4px 14px rgba(255, 79, 155, 0.35);
+}
+
+/* =============== ABOUT PAGE =============== */
+.about-section {
+    max-width: 800px;
+    margin: 120px auto 0;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(18px);
+    border-radius: 22px;
+    box-shadow: 0 10px 40px rgba(255, 79, 155, 0.28);
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.2rem;
+    color: #3a102f;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #5b3a52;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
