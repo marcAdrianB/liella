@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- Fonts + Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-
+    <link rel="icon" type="image/x-icon" href="assets/liella.ico">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="auth-page login-page">
@@ -180,3 +180,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
