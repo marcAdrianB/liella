@@ -63,7 +63,7 @@ foreach ($events as $event) {
     <meta charset="UTF-8">
     <title>Liella! Upcoming Events</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" type="image/x-icon" href="assets/liella.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -275,3 +275,4 @@ foreach ($events as $event) {
 <script src="js/script.js"></script>
 </body>
 </html>
+
