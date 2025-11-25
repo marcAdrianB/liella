@@ -26,7 +26,7 @@ if (isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>Liella! Members</title>
-
+    <link rel="icon" type="image/x-icon" href="assets/liella.ico">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
@@ -371,3 +371,4 @@ avatarButtons.forEach(btn => {
 
 </body>
 </html>
+
