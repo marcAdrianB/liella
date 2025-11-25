@@ -49,7 +49,7 @@ if ($result = $conn->query($sql)) {
     <meta charset="UTF-8">
     <title>Liella! Live Events</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" type="image/x-icon" href="assets/liella.ico">
     <!-- Google Font example -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <!-- Icon font (for arrows / social icons if you want) -->
@@ -342,3 +342,4 @@ if ($result = $conn->query($sql)) {
 <script src="js/script.js"></script>
 </body>
 </html>
+
