@@ -17,8 +17,6 @@ $conn->query("CREATE DATABASE IF NOT EXISTS liella_events_db");
 
 // Switch to this database
 $conn->select_db("liella_events_db");
-
-
 // 3. CREATE TABLES IF NOT EXISTS
 $conn->query("
 CREATE TABLE IF NOT EXISTS users (
@@ -48,6 +46,31 @@ CREATE TABLE IF NOT EXISTS event_registrations (
     FOREIGN KEY (event_id) REFERENCES events(id) ON DELETE CASCADE
 )
 ");
+
+
+
+
+// Ensure default admin user exists
+$adminCheck = $conn->prepare("SELECT id FROM users WHERE username = 'admin' LIMIT 1");
+$adminCheck->execute();
+$adminCheck->store_result();
+
+if ($adminCheck->num_rows === 0) {
+    $adminCheck->close();
+
+    // Plain-text to match your current logic
+    $adminInsert = $conn->prepare("
+        INSERT INTO users (username, password, profile_image)
+        VALUES ('admin', 'admin123', 'assets/default-profile.png')
+    ");
+    $adminInsert->execute();
+    $adminInsert->close();
+} else {
+    $adminCheck->close();
+}
+
+
+
 
 
 // PRELOAD DEFAULT EVENTS IF TABLE IS EMPTY
